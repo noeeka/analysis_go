@@ -134,7 +134,7 @@ func GetBetweenDates(sdate, edate string) []string {
 }
 
 func GetResult(sqlstring string) (result []map[string]interface{}) {
-	dns := fmt.Sprintf("%s:%s@%s(%s:%d)/%s", "allen", "allen123!", "tcp", "101.236.60.67", 3308, "mailtest")
+	dns := fmt.Sprintf("%s:%s@%s(%s:%d)/%s", "", "!", "tcp", "", , "mailtest")
 	db, error := sql.Open("mysql", dns)
 	if error != nil {
 		fmt.Printf("Open mysql failed,err:%v\n", error)
